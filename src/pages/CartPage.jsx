@@ -44,7 +44,7 @@ const CartPage = () => {
             <div className="textContainerCart">
               <p className="cardTitlecart">{item.title} </p>
               <p className="itemDescriptionCart">{item.description.slice(0, 200)}...</p>
-              <p> Price: ${item.price}</p>
+              <p> Price: ${item.price.toFixed(2)}</p>
             </div>
             <div className="imageContainerCart">
               <img className="cartImage" src={item.image} />
